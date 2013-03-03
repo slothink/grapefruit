@@ -36,6 +36,13 @@ class ArticleFile(models.Model) :
 class Board(models.Model) :
 	id = models.CharField(primary_key=True, max_length=255)
 	name = models.CharField(max_length=255)
+	configuration = models.TextField()
+	# categories = models.ManyToManyField("BoardCategory")
+	forwardUrl = models.CharField(max_length=255)
+	layout = models.CharField(max_length=255)
+	
+	def __unicode__(self):
+		return self.name
 
 class BoardCategory(models.Model) :
 	id = models.AutoField(primary_key=True);
