@@ -14,7 +14,7 @@ def home(request):
 def article_list(request, board_id = 'notice'):
     # latest_poll_list = Poll.objects.all().order_by('-pub_date')[:5]
     #context = {'latest_poll_list': latest_poll_list}
-    board = Board(id="notice")
+    board = Board.objects.get(id="notice")
     context = Context({'board':board})
     return render(request, 'board/list.html', context)
 
