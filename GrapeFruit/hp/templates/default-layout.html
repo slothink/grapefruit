@@ -23,24 +23,137 @@
     </script>
 </head>
 <body class="home">
-<ul>
-    <li>교회안내</li>
-    <li>교육</li>
-    <li>컬럼</li>
-    <li>말씀영상</li>
-    <li>나눔</li>
-</ul>
-<div class="body-content">
-{% block content %}{% endblock %}
-</div>
-<div class="footer">
+    <div class="wrap">
+        <div class="top-logo"><a href="/"><img src="/static/img/logo.png" alt="홈으로" /></a></div>
+        <div class="top-menu-deco"></div>
+        <div class="top-menu-container">
+            <div class="top-menu-body">
+                 <ul>
+                    <li><a href="/"><img src="/static/img/top-menu-home.png" alt="홈" /></a></li>
+                    <li><img src="/static/img/top-menu-mypage.png" alt="MY Page" /></li>
+                    <li><img src="/static/img/top-menu-sitemap.png" alt="사이트맵" /></li>
+                    <li><img src="/static/img/top-menu-contact.png" alt="Contact US" /></li>
+                    <li><img src="/static/img/top-menu-login.png" alt="Login" /></li>
+                    
+                </ul>
+            </div>
+        </div>
+        <div class="menu-container">
+            <div class="main-menu-container" data-rollover-area="main-menu">
+                <ul>
+                    <li class="left"></li>
+                    <li><img src="/static/img/mm-01-out.png" data-over="/static/img/mm-01-over.png" data-out="/static/img/mm-01-out.png" data-area="main-menu" alt="교회안내" class="rollover-img-keep button" id="bt-mm-01" data-target="layer-submneu-01" /></li>
+                    <li class="devide"></li>
+                    <li><img src="/static/img/mm-02-out.png" data-over="/static/img/mm-01-over.png" data-out="/static/img/mm-02-out.png" data-area="main-menu" alt="교육" class="rollover-img-keep button" id="bt-mm-02" data-target="layer-submneu-02"/></li>
+                    <li class="devide"></li>
+                    <li><img src="/static/img/mm-03-out.png" data-over="/static/img/mm-01-over.png" data-out="/static/img/mm-03-out.png" data-area="main-menu" alt="컬럼" class="rollover-img-keep button" id="bt-mm-03" data-target="layer-submneu-03"/></li>
+                    <li class="devide"></li>
+                    <li><img src="/static/img/mm-04-out.png" data-over="/static/img/mm-01-over.png" data-out="/static/img/mm-04-out.png" data-area="main-menu" alt="말씀영상" class="rollover-img-keep button" id="bt-mm-04" data-target="layer-submneu-04"/></li>
+                    <li class="devide"></li>
+                    <li><img src="/static/img/mm-05-out.png" data-over="/static/img/mm-01-over.png" data-out="/static/img/mm-05-out.png" data-area="main-menu" alt="나눔" class="rollover-img-keep button" id="bt-mm-05" data-target="layer-submneu-05"/></li>
+                    <li class="right"></li>
+                </ul>
+            </div>
+            <div class="sub-menu-container" id="layer-submneu-01" style="display:none;right:30px;">
+                <ul>
+                    <li class="left"></li>
+                    <li><img src="/static/img/sm-tit-01-out.png" data-over="/static/img/sm-tit-01-over.png" data-out="/static/img/sm-tit-01-out.png" class="rollover-img-temporary button" alt="교회안내" /></li>
+                    <li><img src="/static/img/sm-tit-02-out.png" data-over="/static/img/sm-tit-02-over.png" data-out="/static/img/sm-tit-02-out.png" class="rollover-img-temporary button" alt="목사님 인사말" /></li>
+                    <li><img src="/static/img/sm-tit-03-out.png" data-over="/static/img/sm-tit-03-over.png" data-out="/static/img/sm-tit-03-out.png" class="rollover-img-temporary button" alt="교회비젼" /></li>
+                    <li><img src="/static/img/sm-tit-04-out.png" data-over="/static/img/sm-tit-04-over.png" data-out="/static/img/sm-tit-04-out.png" class="rollover-img-temporary button" alt="교회발자취" /></li>
+                    <li><img src="/static/img/sm-tit-05-out.png" data-over="/static/img/sm-tit-05-over.png" data-out="/static/img/sm-tit-05-out.png" class="rollover-img-temporary button" alt="교회 둘러보기" /></li>
+                    <li><img src="/static/img/sm-tit-06-out.png" data-over="/static/img/sm-tit-06-over.png" data-out="/static/img/sm-tit-06-out.png" class="rollover-img-temporary button" alt="교회 약도" /></li>
+                    <li><img src="/static/img/sm-tit-07-out.png" data-over="/static/img/sm-tit-07-over.png" data-out="/static/img/sm-tit-07-out.png" class="rollover-img-temporary button" alt="위원회" /></li>
+                    <li><img src="/static/img/sm-tit-08-out.png" data-over="/static/img/sm-tit-08-over.png" data-out="/static/img/sm-tit-08-out.png" class="rollover-img-temporary button" alt="성가대" /></li>
+                    <li><img src="/static/img/sm-tit-09-out.png" data-over="/static/img/sm-tit-09-over.png" data-out="/static/img/sm-tit-09-out.png" class="rollover-img-temporary button" alt="섬기는 이들" /></li>
+                    <li><img src="/static/img/sm-tit-10-out.png" data-over="/static/img/sm-tit-10-over.png" data-out="/static/img/sm-tit-10-out.png" class="rollover-img-temporary button" alt="교회 봉사" /></li>
+                    
+                    <li class="right"></li>
+                </ul>
+            </div>
+            <div class="sub-menu-container" id="layer-submneu-02" style="display:none;right:40px;">
+                <ul>
+                    <li class="left"></li>
+                    <li><img src="/static/img/sm-tit-11-out.png" data-over="/static/img/sm-tit-11-over.png" data-out="/static/img/sm-tit-11-out.png" class="rollover-img-temporary button" alt="영아부" /></li>
+                    <li><img src="/static/img/sm-tit-12-out.png" data-over="/static/img/sm-tit-12-over.png" data-out="/static/img/sm-tit-12-out.png" class="rollover-img-temporary button" alt="유치부" /></li>
+                    <li><img src="/static/img/sm-tit-13-out.png" data-over="/static/img/sm-tit-13-over.png" data-out="/static/img/sm-tit-13-out.png" class="rollover-img-temporary button" alt="유년부" /></li>
+                    <li><img src="/static/img/sm-tit-14-out.png" data-over="/static/img/sm-tit-14-over.png" data-out="/static/img/sm-tit-14-out.png" class="rollover-img-temporary button" alt="초등부" /></li>
+                    <li><img src="/static/img/sm-tit-15-out.png" data-over="/static/img/sm-tit-15-over.png" data-out="/static/img/sm-tit-15-out.png" class="rollover-img-temporary button" alt="중등부" /></li>
+                    <li><img src="/static/img/sm-tit-16-out.png" data-over="/static/img/sm-tit-16-over.png" data-out="/static/img/sm-tit-16-out.png" class="rollover-img-temporary button" alt="고등부" /></li>
+                    <li><img src="/static/img/sm-tit-17-out.png" data-over="/static/img/sm-tit-17-over.png" data-out="/static/img/sm-tit-17-out.png" class="rollover-img-temporary button" alt="청년부" /></li>
+                    <li><img src="/static/img/sm-tit-18-out.png" data-over="/static/img/sm-tit-18-over.png" data-out="/static/img/sm-tit-18-out.png" class="rollover-img-temporary button" alt="성경대학" /></li>
+                    <li><img src="/static/img/sm-tit-19-out.png" data-over="/static/img/sm-tit-19-over.png" data-out="/static/img/sm-tit-19-out.png" class="rollover-img-temporary button" alt="새가족성경공부" /></li>
+                    
+                    <li class="right"></li>
+                </ul>
+            </div>
+            <div class="sub-menu-container" id="layer-submneu-03" style="display:none;right:290px;">
+                <ul>
+                    <li class="left"></li>
+                    <li><img src="/static/img/sm-tit-20-out.png" data-over="/static/img/sm-tit-20-over.png" data-out="/static/img/sm-tit-20-out.png" class="rollover-img-temporary button" alt="이강우 컬럼" /></li>
+                    <li><img src="/static/img/sm-tit-21-out.png" data-over="/static/img/sm-tit-21-over.png" data-out="/static/img/sm-tit-21-out.png" class="rollover-img-temporary button" alt="송순안 시인" /></li>
+                    <li class="right"></li>
+                </ul>
+            </div>
+            <div class="sub-menu-container" id="layer-submneu-04" style="display:none;right:145px;">
+                <ul>
+                    <li class="left"></li>
+                    <li><img src="/static/img/sm-tit-22-out.png" data-over="/static/img/sm-tit-22-over.png" data-out="/static/img/sm-tit-22-out.png" class="rollover-img-temporary button" alt="설교말씀" /></li>
+                    <li><img src="/static/img/sm-tit-23-out.png" data-over="/static/img/sm-tit-23-over.png" data-out="/static/img/sm-tit-23-out.png" class="rollover-img-temporary button" alt="행사영상" /></li>
+                    <li class="right"></li>
+                </ul>
+            </div>
+            <div class="sub-menu-container" id="layer-submneu-05" style="display:none;right:25px;">
+                <ul>
+                    <li class="left"></li>
+                    <li><img src="/static/img/sm-tit-24-out.png" data-over="/static/img/sm-tit-24-over.png" data-out="/static/img/sm-tit-24-out.png" class="rollover-img-temporary button" alt="공지사항" /></li>
+                    <li><img src="/static/img/sm-tit-25-out.png" data-over="/static/img/sm-tit-25-over.png" data-out="/static/img/sm-tit-25-out.png" class="rollover-img-temporary button" alt="나눔글" /></li>
+                    <li><img src="/static/img/sm-tit-26-out.png" data-over="/static/img/sm-tit-26-over.png" data-out="/static/img/sm-tit-26-out.png" class="rollover-img-temporary button" alt="새가족" /></li>
+                    <li><img src="/static/img/sm-tit-27-out.png" data-over="/static/img/sm-tit-27-over.png" data-out="/static/img/sm-tit-27-out.png" class="rollover-img-temporary button" alt="주보" /></li>
+                    <li><img src="/static/img/sm-tit-28-out.png" data-over="/static/img/sm-tit-28-over.png" data-out="/static/img/sm-tit-28-out.png" class="rollover-img-temporary button" alt="목사님께" /></li>
+                    <li class="right"></li>
+                </ul>
+            </div>
+        </div>
+        <div class="bible-container">
 
-</a>
+            <div class="body-content">
+            {% block content %}{% endblock %}
+            </div>
+            <div class="quick-link">
+                <a href="/"><img src="/static/img/quick-weekly.gif" alt="주보보기" /></a>
+                <a href="/"><img src="/static/img/quick-bible-search.gif" alt="성경검색" /></a>
+            </div>
+            <div class="footer">
+                <div class="link-container">
+                    <ul>
+                        <li><a href="/"><img src="/static/img/footer-link-01.png" alt="교회소개" /></a></li>
+                        <li class="devide"></li>
+                        <li><a href="/"><img src="/static/img/footer-link-02.png" alt="김성옥 목사" /></a></li>
+                        <li class="devide"></li>
+                        <li><a href="/"><img src="/static/img/footer-link-03.png" alt="예배시간 안내" /></a></li>
+                        <li class="devide"></li>
+                        <li><a href="/"><img src="/static/img/footer-link-04.png" alt="새가족 등록하기" /></a></li>
+                        <li class="devide"></li>
+                        <li><a href="/"><img src="/static/img/footer-link-05.png" alt="오시는 길" /></a></li>
+                    </ul>
+                </div>
+                <div class="footer-detail">
+                </div>
+            </div>
+        </div>
+        
+    </div>
+<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+<!--    
 <script type="text/javascript" src="${CONTEXT}/lib/jquery-1.7.2.min.js"></script>   
 <script type="text/javascript" src="${CONTEXT}/lib/jquery.tools.min.js"></script>
 <script type="text/javascript" src="${CONTEXT}/lib/fancyBox/source/jquery.fancybox.js"></script>
-<script src="${CONTEXT}/asset/common.js?v=2"></script>
+
 <script type="text/javascript" src="${CONTEXT}/fresh/lib/customFunctions.js"></script>
 <script type="text/javascript" src="${CONTEXT}/asset/fresh.js?v=2"></script>
+-->
+<script src="/static/js/sm-core.js?v=1"></script>
+<script src="/static/js/page.js?v=1"></script>
 </body>
 </html>

@@ -1,3 +1,62 @@
 
-body.home wrap {}
+body {
+	background-image: url('img/all_bj01.gif');
+	background-repeat: repeat;
+	margin:0;padding:0;
+}
+
+.button {cursor:pointer;}
+
+body.home .wrap {
+	width:1033px;
+	margin:0 auto;
+	position:relative;
+}
+	.top-logo {position:absolute;z-index:40;}
+	.top-menu-deco {width:190px;height:33px;position:absolute;right:0;top:0;background-image:url('img/top-deco-01.png');background-repeat: no-repeat;background-position: top right;}
+	.top-menu-container {text-align:right;position:relative;text-align:right;}
+	.top-menu-container .top-menu-body {display: inline-block;margin-top:36px;}
+		.top-menu-body ul{list-style-type: none;margin:0;padding:0;}
+		.top-menu-body ul li {float:left;margin-left:5px;}
+
+	.menu-container {position: relative;width:100%;height:70px;text-align:right;}
+		.main-menu-container {position:absolute;top:0;right:0;height:40px;z-index:20;}
+			.main-menu-container ul{list-style-type: none;margin:0;padding:0;}
+				.main-menu-container li {float:left;padding-top:3px;background-image:url('img/mm-bg.png');background-repeat: repeat-x;background-position: top;}
+				.main-menu-container li.left {width:24px;height:36px;background-image:url('img/mm-left.png');background-repeat: no-repeat;}
+				.main-menu-container li.devide {width:24px;height:40px;background-image:url('img/mm-devide.png');background-repeat: no-repeat;}
+				.main-menu-container li.right {width:24px;height:36px;background-image:url('img/mm-right.png');background-repeat: no-repeat;}
+		.sub-menu-container {position:absolute;top:36px;right:0;z-index:10;}
+			.sub-menu-container ul{margin:0;padding:0;list-style-type: none;}
+				.sub-menu-container li{float:left;height:26px;background-image:url('img/sm-bg.png');background-repeat: repeat-x;}
+				.sub-menu-container li.left{width:16px;height:26px;background-image:url('img/sm-left.png');background-repeat: no-repeat;}
+				.sub-menu-container li.right{width:15px;height:26px;background-image:url('img/sm-right.png');background-repeat: no-repeat;}
+
+	
+
+	body.home .bible-container {position:relative;width:1033px;height:580px;background-image:url('img/main-bible-bg.png');background-repeat: no-repeat;}
+		body.home .bible-container .body-content {height:500px;}
+		body.home .bible-container .body-content .page-side {float:left;width:366px;height:490px;margin-left:72px;margin-top:4px;}
+		body.home .bible-container .body-content .page-content {float:left;width:540px;height:490px;margin-top:4px;padding:10px 10px 10px 20px;}
+		body.home .bible-container .body-content .page-content .boards {display:block;width:330px;height:260px;}
+		body.home .bible-container .body-content .page-content .boards ul {margin:0;padding:0;list-style-type: none;}
+		body.home .bible-container .body-content .page-content .boards ul li{float:left;}
+		body.home .bible-container .body-content .page-content .boards .tab-content-container {clear:left;}
+		body.home .bible-container .body-content .page-content .worship-timetable {position:absolute;right:40px;top:0;width:200px;height:256px;}
+		body.home .bible-container .body-content .page-content .rotate-container {width:507px;height:112px;margin-top:15px;background-image:url('img/main-rotator.png');background-repeat: no-repeat;}
+		body.home .bible-container .body-content .page-content .rotate-container .items {}
+		body.home .bible-container .body-content .page-content .banner-container {margin-top:15px;}
+		body.home .bible-container .body-content .page-content .banner-container ul {margin:0;padding:0;list-style-type: none;}
+		body.home .bible-container .body-content .page-content .banner-container ul li{float:left;}
+
+
+		body.home .bible-container .quick-link {position:absolute;right:26px;top:40px;width:23px;}
+		.bible-container .footer {margin-top:20px;padding-left:480px;height:70px;}
+			.bible-container .footer .link-container {height:15px;}
+				.bible-container .footer .link-container ul {list-style-type: none;margin:0;padding:0;}
+				.bible-container .footer .link-container ul li {float:left;height:15px;}
+				.bible-container .footer .link-container ul li.devide {width:1px;height:15px;margin:0 10px;background-image:url('img/footer-link-devide.png');background-repeat: no-repeat;}
+			.bible-container .footer .footer-detail {width:400px;height:32px;background-image:url('img/footer-detail.png');background-repeat: no-repeat;}
+
+
 

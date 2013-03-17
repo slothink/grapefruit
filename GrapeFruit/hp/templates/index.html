@@ -1,5 +1,59 @@
 {% extends "default-layout.html" %}
 
 {% block content %}
-this is home
+<div class="page-side">
+	<div id="main-flash">
+	</div>	
+</div>
+<div class="page-content">
+	<div class="boards">
+		<ul>
+			<li><img src="/static/img/tab-01-over.png" data-over="/static/img/tab-01-over.png" data-out="/static/img/tab-01-out.png" data-area="tab" class="rollover-img-click button" id="tab-01" data-target="tab-container-01" /></li>
+			<li><img src="/static/img/tab-02-out.png" data-over="/static/img/tab-02-over.png" data-out="/static/img/tab-02-out.png" data-area="tab" class="rollover-img-click button" id="tab-02" data-target="tab-container-02" /></li>
+			<li><img src="/static/img/tab-03-out.png" data-over="/static/img/tab-03-over.png" data-out="/static/img/tab-03-out.png" data-area="tab" class="rollover-img-click button" id="tab-03" data-target="tab-container-03" /></li>
+			<li><img src="/static/img/tab_line.gif" /></li>
+			<li><img src="/static/img/tab_more.gif" /></li>
+		</ul>
+		<div class="tab-content-container">
+			<div id="tab-container-01" style="">
+				<table>
+					<tr>
+						<td>01</td>
+					</tr>
+				</table>
+			</div>
+			<div id="tab-container-02" style="display:none;">
+				<table>
+					<tr>
+						<td>02</td>
+					</tr>
+				</table>
+			</div>
+			<div id="tab-container-03" style="display:none;">
+				<table>
+					<tr>
+						<td>03</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</div>
+	<div class="worship-timetable">
+		<img src="/static/img/introduce-worship-table.png" />
+	</div>
+	<div class="rotate-container">
+		<div class="items">
+		</div>
+	</div>
+	<div class="banner-container">
+		<ul>
+			<li><a href="/"><img src="/static/img/c_img41.gif" /></a></li>
+			<li><a href="/"><img src="/static/img/c_img42.gif" /></a></li>
+			<li><a href="/"><img src="/static/img/c_img43.gif" /></a></li>
+		</ul>
+	</div>
+</div>
+<script type="text/javascript">
+var LOAD_PAGE = "eh.page.index";
+</script>
 {% endblock %}
