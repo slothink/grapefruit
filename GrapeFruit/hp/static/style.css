@@ -7,6 +7,10 @@ body {
 
 .button {cursor:pointer;}
 
+/*
+ * Page Class : home
+ */
+
 body.home .wrap {
 	width:1033px;
 	margin:0 auto;
@@ -51,12 +55,47 @@ body.home .wrap {
 
 
 		body.home .bible-container .quick-link {position:absolute;right:26px;top:40px;width:23px;}
-		.bible-container .footer {margin-top:20px;padding-left:480px;height:70px;}
+		body.home .bible-container .footer {margin-top:20px;padding-left:480px;height:70px;}
 			.bible-container .footer .link-container {height:15px;}
 				.bible-container .footer .link-container ul {list-style-type: none;margin:0;padding:0;}
 				.bible-container .footer .link-container ul li {float:left;height:15px;}
 				.bible-container .footer .link-container ul li.devide {width:1px;height:15px;margin:0 10px;background-image:url('img/footer-link-devide.png');background-repeat: no-repeat;}
 			.bible-container .footer .footer-detail {width:400px;height:32px;background-image:url('img/footer-detail.png');background-repeat: no-repeat;}
 
+/*
+ * Page Class : side
+ */
+body.side .wrap {
+	width:1033px;
+	margin:0 auto;
+	position:relative;
+}
 
+body.side .bible-container-head {width:999px;height:13px;margin:0 auto;background-image:url('img/sub-bible-bg-top.png');background-repeat: no-repeat;}
+body.side .bible-container {position:relative;width:999px;margin:0 auto;}
+	body.side .bible-container .body-content {position:relative;;padding:0;background-position: top;border:0;background-image:url('img/sub-bible-bg-middle.png');background-repeat: repeat-y;}
+	body.side .bible-container .body-content .side-container .side-page {display:inline-block;width:200px;height:490px;margin-left:72px;border:1px solid red;}
+	body.side .bible-container .body-content .side-container .side-bar {display:inline-block;width:13px;margin-left:72px;border:1px solid green;background-image:url('img/sub-bible-devide.gif');background-repeat: repeat-y;}
+	body.side .bible-container .body-content .side-container .side-content {display:inline-block;width:540px;height:490px;margin-top:4px;border:1px solid blue;}
+	body.side .bible-container .quick-link {position:absolute;right:26px;top:40px;width:23px;}
+	body.side .bible-container .footer {width:999px;height:111px;margin:0 auto;padding-top:40px;padding-left:480px;background-image:url('img/sub-bible-bg-bottom.png');background-repeat: no-repeat;}
+/*body.side .bible-container-foot {width:999px;height:111px;margin:0 auto;background-image:url('img/sub-bible-bg-bottom.png');background-repeat: no-repeat;}*/
+
+		
+		/*
+		body.side .bible-container .body-content .page-content .boards {display:block;width:330px;height:260px;}
+		body.side .bible-container .body-content .page-content .boards ul {margin:0;padding:0;list-style-type: none;}
+		body.side .bible-container .body-content .page-content .boards ul li{float:left;}
+		body.side .bible-container .body-content .page-content .boards .tab-content-container {clear:left;}
+		body.side .bible-container .body-content .page-content .worship-timetable {position:absolute;right:40px;top:0;width:200px;height:256px;}
+		body.side .bible-container .body-content .page-content .rotate-container {width:507px;height:112px;margin-top:15px;background-image:url('img/main-rotator.png');background-repeat: no-repeat;}
+		body.side .bible-container .body-content .page-content .rotate-container .items {}
+		body.side .bible-container .body-content .page-content .banner-container {margin-top:15px;}
+		body.side .bible-container .body-content .page-content .banner-container ul {margin:0;padding:0;list-style-type: none;}
+		body.side .bible-container .body-content .page-content .banner-container ul li{float:left;}
+
+
+
+		body.side .bible-container .quick-link {position:absolute;right:26px;top:40px;width:23px;}
+		*/
 

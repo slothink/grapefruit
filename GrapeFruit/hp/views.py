@@ -11,6 +11,12 @@ def home(request):
     return HttpResponse(template.render(context))
     #return HttpResponse("Hello, world. You're at the poll index.")
 
+def side_design(request):
+	#board = Board.objects.get(id="notice")
+    context = Context()
+    return render(request, 'board/list.html', context)
+	
+
 def article_list(request, board_id = 'notice'):
     # latest_poll_list = Poll.objects.all().order_by('-pub_date')[:5]
     #context = {'latest_poll_list': latest_poll_list}
